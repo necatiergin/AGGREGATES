@@ -7,5 +7,5 @@ struct Nec {
 
 int main()
 {
-	static_assert(std::is_aggregate_v<Nec>, "not an aggregate!");  //fired
+	static_assert(std::is_aggregate_v<Nec>, "not an aggregate!");  //fails
 }
