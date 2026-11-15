@@ -8,5 +8,6 @@ struct Nec : decltype(f) {
 
 int main()
 {
+	static_assert(!std::is_aggregate_v<decltype(f)>);
 	static_assert(std::is_aggregate_v<Nec>);
 }
