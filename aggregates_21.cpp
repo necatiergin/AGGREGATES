@@ -1,3 +1,4 @@
+// aggregate types may have default member initializers
 struct Config {
     int width = 800;
     int height = 600;
